@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  padding: 10px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 10px;
+}
+
+.grid-container  > div {
+  background-color: #2196F3;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 5px;
+}
+
+.flex-container  {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.flex-container  > div {
+  
+  background-color: #2196F3;
+  padding: 20px;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  font-size: 30px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+
+
+
+
+.item1 {
+  grid-column: 1 / span 3;
+}
+
+.item2 {
+  grid-column: 4 / span 3;
+}
+
+.item3 {
+  grid-column: 1 / span 1;
+}
+
+.item4 {
+  grid-column: 2 / span 5;
+}
+
+.item5 {
+  grid-column: 1 / span 6;
+}
+
+.itemA {
+  flex: 50%;
+}
+
+.itemB {
+    flex: 50%;
+}
+
+.itemC {
+    flex: 16.7%;
+}
+
+.itemD {
+    flex: 83.3%;
+}
+
+.itemE {
+    flex: 100%;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="container grid-container">
+	<div class="item1">A</div>
+	<div class="item2">B</div>
+    <div class="item3">C</div>  
+    <div class="item4">D</div>
+    <div class="item5">E</div>
+</div>
+
+
+<div class="container" >
+    <div class="flex-container">
+        <div class="itemA">A</div>
+        <div class="itemB">B</div>
+    </div>
+    <div class="flex-container">
+        <div class="itemC">C</div>  
+        <div class="itemD">D</div>
+    </div>
+    <div class="flex-container">
+    <div class="itemE">E</div>
+</div>
+</div>
+
+</body>
+</html>
+
+
